@@ -1,0 +1,809 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--saved from url=(0014)about:internet-->
+<html>
+    <head>
+        <title/>
+        <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+        <meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+    </head>
+    <body>
+        <article>
+            <p>
+                <a name="topofdocument"/>
+            </p>
+            <h1>
+                <a name=""/>
+            </h1>
+            <section>
+                <h2>
+                    <a name="ID0EG" id="ID0EG">
+                        <span class="section-number">1</span>
+                        <span class="section-title">Satellitengestützte Sensoren</span>
+                    </a>
+                </h2>
+                <div class="segment">
+                    <p id="ID0EM" class="">
+                        <strong>u.M.v. Engin Abali, Viktor Schneider, Denis Moos</strong>
+                    </p>
+                </div>
+                <section>
+                    <h3>
+                        <a name="ID0ER" id="ID0ER">
+                            <span class="section-number">1.1</span>
+                            <span class="section-title">8.1 Einleitung</span>
+                        </a>
+                    </h3>
+                    <div class="segment">
+                        <p id="ID0EY" class="">Die Idee für ein satellitengestütztes Ortungssystem stammt von dem deutschen Ingenieur Karl Hans Janke aus dem Jahre 1939. In Berlin meldete er das Patent für einen „Standortanzeiger, insbesondere für Luftfahrzeuge“ an, welches im Jahre 1943 erteilt wurde. Doch die Welt schien für ein solches Ortungssystem noch nicht bereit zu sein, woraufhin der Wissenschaftler wegen „wahnhaften Erfindens“ in eine Nervenanstalt eingewiesen wurde, wo er 1988 verstarb. Mittlerweile befinden sich  weltweit mehrere satellitenbasierte Systeme im Einsatz oder in der Entwicklung wie z.B. das US-amerikanische GPS, das russische GLONASS oder das europäische Galileo. Alle Ortungs- und Navigationssysteme werden unter dem Begriff „globale Navigationssatellitensysteme“ (GNSS – Global Navigation Satellite System) zusammengefasst. </p>
+                        <p id="ID0E2" class="">In Kapitel <a format="html" scope="internal" href="#" class="link hyperlink-notfound">Kapitel 7</a> wurden laufzeitbasierte Sensoren beschrieben, die nach dem Puls-Echo-Prinzip funktionieren. Die satellitengestützte Ortung und Navigation gehört ebenfalls zu den laufzeitbasierten Verfahren, jedoch mit dem Unterschied, dass es sich dabei um eine Einweg-Entfernungsmessung handelt (Englisch: One-Way-Ranging). Dieses ermöglicht die Nutzung durch eine unbegrenzte Anzahl von Empfängern gleichzeitig. </p>
+                        <p id="ID0EGB" class="">Das folgende Unterkapitel 8.2 beschreibt das Messprinzip der Positionsbestimmung mithilfe von Satelliten und einem Empfänger. In diesem Abschnitt wird neben den physikalischen Grundlagen insbesondere auch auf die Messgenauigkeit und mögliche Fehlerquellen der Technologie sowie den Aufbau und die Funktion eines Empfängers eingegangen. Das sich daran anschließende Kapitel <a format="html" scope="internal" href="#" class="link hyperlink-notfound">Kapitel 8.3</a> beschäftigt sich mit Anwendungen dieses Messverfahrens. Im darauf folgenden Kapitel <a format="html" scope="internal" href="#" class="link hyperlink-notfound">Kapitel 8.4</a> werden die vier existierenden globalen Navigationssatellitensysteme vorgestellt und miteinander verglichen. Eine Zusammenfassung in Kapitel <a format="html" scope="internal" href="#" class="link hyperlink-notfound">Kapitel 8.4</a> schließt dieses Kapitel ab.</p>
+                    </div>
+                </section>
+                <section>
+                    <h3>
+                        <a name="ID0EBC" id="ID0EBC">
+                            <span class="section-number">1.2</span>
+                            <span class="section-title">8.2 Messprinzip</span>
+                        </a>
+                    </h3>
+                    <section>
+                        <h4>
+                            <a name="ID0EIC" id="ID0EIC">
+                                <span class="section-number">1.2.1</span>
+                                <span class="section-title">8.2.1 Physikalische Grundlagen</span>
+                            </a>
+                        </h4>
+                        <div class="segment">
+                            <p id="ID0EPC" class="">Die satellitengestützte Ortsbestimmung (eigener Standort) und Ortung (fremder Standort) gehört dem Prinzip nach zu den laufzeitbasierten Verfahren, wie sie ausführlich in Kapitel <a format="html" scope="internal" href="#" class="link hyperlink-notfound">Kapitel 7</a> behandelt wurden. Die physikalischen Grundlagen dieser auch Wellenausbreitungssensoren genannten Detektoren wurden in Kapitel <a format="html" scope="internal" href="#" class="link hyperlink-notfound">Kapitel 7.1</a> beschrieben und werden hier nicht wiederholt. </p>
+                            <p id="ID0EBD" class="">Ein spezieller laufzeitbasierter Sensor ist der in Kapitel <a format="html" scope="internal" href="#" class="link hyperlink-notfound">Kapitel 7.3</a> behandelte Radar (Radio Detection and Ranging). Die satellitengestützte Ortsbestimmung basiert genau wie die Entfernungsmessung mittels Radar auf der Ausbreitung elektromagnetischer Wellen. Diese weisen Trägerfrequenzen zwischen 1,164&#160;GHz und 1,602&#160;GHz auf, wobei jedes der vier globalen Navigationssatellitensysteme jeweils nur sehr enge, separate Frequenzbereiche nutzen darf, seine sogenannten Bänder. Die Trägerfrequenzen für die satellitengestützte Ortsbestimmung liegen damit ungefähr in der Mitte des auch von Radar-Sensoren genutzten Spektralbereichs. Die physikalischen Grundlagen von Radarwellen und deren Ausbreitung wurden in Kapitel <a format="html" scope="internal" href="#" class="link hyperlink-notfound">Kapitel 7.3.2</a> präsentiert. </p>
+                            <p id="ID0ETD" class="">Die Trägerfrequenzen korrespondieren mit Wellenlängen im oberen Mikrowellenbereich zwischen 18,71&#160;cm und 25,75&#160;cm (siehe <a format="html" scope="internal" href="#" class="link hyperlink-notfound">Tabelle 7</a>.3.1). In diesem Spektralbereich ist die atmosphärische Grunddämpfung der Signale durch Absorption und Streuung an Luftmolekülen sowie die wetterabhängige Zusatzdämpfung in der Troposphäre durch Wolken, Regen, Nebel, etc. vergleichsweise klein (siehe <a format="html" scope="internal" href="#" class="link hyperlink-notfound">Abbildung 7</a>.3.3). Dies ermöglicht die für das Funktionsprinzip erforderlichen großen Reichweiten (Wolff 1998). </p>
+                            <p id="ID0EHE" class="">Für die satellitengestützte Ortsbestimmung werden mehrere Navigationssatelliten in eine Umlaufbahn um die Erde verbracht. <a format="html" scope="internal" href="#" class="link hyperlink-notfound">Abbildung 8</a>.1 zeigt als Beispiel einen GPS-Block-II-F-Satelliten. Den vier globalen Navigationssatellitensystemen sind dafür verschiedene Höhen zwischen 19.130&#160;km (GLONASS) und 23.222&#160;km (Galileo) zugewiesen. Von dort emittieren die Satelliten ihre Mikrowellen-Signale in Richtung Erde. </p>
+                            <p id="ID0ESE" class="align-center ">
+                                <img img-width="321.8" img-width-mm="85.12326737911333" img-height="258.06666666666666" img-height-mm="68.26438119422988" id="ID0EVE" class="inline-graphic" img-orientation="landscape" src="../images/media/image1.jpeg" alt="" title=""/>
+                            </p>
+                            <p id="ID0E2E" class="">
+                                <a format="html" scope="internal" href="#" class="link hyperlink-notfound">Abbildung 8</a>.1: GPS-Block-II-F-Satellit in der Erdumlaufbahn (CC BY 2.0, NASA).</p>
+                            <p id="ID0EHF" class="">Wie alle laufzeitbasierten Sensoren basiert auch die satellitengestützte Ortsbestimmung nicht auf der Emission kontinuierlicher Wellen sondern zeitlich modulierter Signale. Hierfür wird das hochfrequente Trägersignal niederfrequent variiert. Die Periodendauer dieser Modulation ist deutlich größer als die Periodendauer der Trägerwelle. GPS und die meisten anderen globalen Navigationssatellitensysteme verwenden hierfür eine komplexe Phasenmodulation. Näheres zu verschiedenen Modulationsarten findet sich in Kapitel <a format="html" scope="internal" href="#" class="link hyperlink-notfound">Kapitel 7.1.2</a>.</p>
+                            <p id="ID0ESF" class="">Da die bodennahen Schichten der Atmosphäre eine recht homogene Zusammensetzung haben, ist auch die Ausbreitungsgeschwindigkeit  elektromagnetischer Wellen mit ca. 299.702&#160;km/s (etwa 0,03% geringer als die Vakuumlichtgeschwindigkeit) annähernd konstant (vergleiche <a format="html" scope="internal" href="#" class="link hyperlink-notfound">Tabelle 7</a>.3.2). </p>
+                            <p id="ID0E4F" class="">Um die Positionskoordinaten eines Objekts auf der Erdoberfläche zu bestimmen, muss dieses einen Empfänger für die Mikrowellensignale der Satelliten haben. Die Ortsbestimmung aller Navigations- und Ortungssysteme basiert dann auf dem folgenden Verfahren (H. Klausing &amp; W. Holpp 2000, S.313-314): </p>
+                            <ol>
+                                <li>
+                                    <p id="ID0EFG" class="">Ein Satellit (z.B. ein GPS-Satellit) emittiert zum Sendezeitpunkt  ein Signal von seinem Sendeort in der Erdumlaufbahn. </p>
+                                </li>
+                            </ol>
+                            <ol>
+                                <li>
+                                    <p id="ID0ENG" class="">Der Empfänger auf der Erdoberfläche (z.B. ein GPS-Empfänger) detektiert das Signal zum Empfangszeitpunkt . </p>
+                                </li>
+                                <li>
+                                    <p id="ID0ESG" class="">Der Empfänger bestimmt aus der Zeitdifferenz zwischen dem Sende- und dem Empfangszeitpunkt die Laufzeit  des Signals: </p>
+                                </li>
+                            </ol>
+                            <p id="ID0EZG" class=""> .   	      	 (8.1)</p>
+                            <ol>
+                                <li>
+                                    <p id="ID0EJH" class="">Der Empfänger bestimmt aus der Annahme einer gleichförmigen Ausbreitungsgeschwindigkeit  des Signals seinen Abstand  vom Sendeort des Satelliten: </p>
+                                </li>
+                            </ol>
+                            <p id="ID0EPH" class="align-center "> .   	      	(8.2)</p>
+                            <ol>
+                                <li>
+                                    <p id="ID0EAAAC" class="">Der Empfänger bestimmt aus dem Abstand  und dem Sendeort des Satelliten die Kugelfläche um den Sendeort, auf der er sich befindet.</p>
+                                </li>
+                                <li>
+                                    <p id="ID0EFAAC" class="">Der Empfänger wiederholt die Schritte 1 bis 5 für die Signale anderer Satelliten. </p>
+                                </li>
+                                <li>
+                                    <p id="ID0EKAAC" class="">Der Empfänger bestimmt seine Position im dreidimensionalen Raum durch Ermittlung des eindeutigen Schnittpunkts der Kugelflächen um die Satelliten (siehe Kapitel <a format="html" scope="internal" href="#" class="link hyperlink-notfound">Kapitel 8.2.2</a>).</p>
+                                </li>
+                            </ol>
+                            <p id="ID0EWAAC" class="">Durch die Aufzeichnung der Position eines Objekts als Funktion der Zeit lässt sich mithilfe der satellitengestützten Ortsbestimmung auch dessen Geschwindigkeit ermitteln. </p>
+                            <p id="ID0EZAAC" class="">Im Gegensatz zu der in Kapitel <a format="html" scope="internal" href="#" class="link hyperlink-notfound">Kapitel 7</a> beschriebenen Laufzeitmessung handelt es sich bei der satellitengestützten Ortsbestimmung allerdings nicht um ein Puls-Echo-Verfahren, bei dem das Senden und Empfangen von demselben System durchgeführt wird. Diese sogenannte Einweg-Entfernungsmessung (Englisch: One-Way-Ranging) ist in gewisser Weise dem sekundären Radar verwandt, denn Sender (Satellit) und Empfänger sind weit (ca. 20.000&#160;km) voneinander entfernt. Auf diese Art und Weise ist es möglich, dass das System von einer unbegrenzten Anzahl von Empfängern gleichzeitig genutzt wird. Um die Laufzeit und damit seine Position zu bestimmen, müssen dem Empfänger allerdings für jedes Satellitensignal der Sendezeitpunkt und der Sendeort mitgeteilt werden. Dies erfolgt mithilfe der vergleichsweise komplexen Signalmodulation. Die verschiedenen globalen Navigationssatellitensysteme nutzen dabei unterschiedliche Codierungen, um die Information zu übermitteln. Die Signalübertragung und Codierung ist dabei so eindeutig, dass es dem Empfänger möglich ist zu bestimmen, von welchem Satelliten das empfangene Signal stammt, obwohl alle Satelliten eines Systems die gleiche Trägerfrequenz benutzen.</p>
+                        </div>
+                    </section>
+                    <section>
+                        <h4>
+                            <a name="ID0ELBAC" id="ID0ELBAC">
+                                <span class="section-number">1.2.2</span>
+                                <span class="section-title">8.2.2 Ortsbestimmung </span>
+                            </a>
+                        </h4>
+                        <div class="segment">
+                            <p id="ID0ESBAC" class="">Anhand der <a format="html" scope="internal" href="#" class="link hyperlink-notfound">Abbildung 8</a>.2 lässt sich die zweidimensionale Positionsbestimmung erklären. Wie in Kapitel <a format="html" scope="internal" href="#" class="link hyperlink-notfound">Kapitel 8.2.1</a> ausgeführt, ergibt sich als möglicher Aufenthaltsort des Empfängers für jedes empfangene Satellitensignal eine Kugelfläche im Raum und damit ein Kreis auf der Erdoberfläche. Betrachtet man die beiden Kreise, die von den Signalen der Satelliten 1 und 2 herrühren (in der Abbildung Sat&#160;1 und Sat&#160;2), so entstehen in der Regel zwei mögliche Schnittpunkte auf der Erdoberfläche (Punkte A und B). Zieht man nun noch einen dritten Satelliten hinzu (Sat&#160;3), so ergibt sich ein eindeutiger Schnittpunkt aller drei Satelliten. Der Empfänger befindet sich am Punkt B (Klausing &amp; Holpp 2000, S. 314). </p>
+                            <p id="ID0EECAC" class="align-center ">
+                                <img img-width="239.56629921259844" img-width-mm="63.370621948100315" img-height="284.2581627296588" img-height-mm="75.19261526019966" id="ID0EHCAC" class="inline-graphic" img-orientation="portrait" src="../images/media/image2.png" alt="" title=""/>
+                            </p>
+                            <p id="ID0ENCAC" class="">
+                                <a format="html" scope="internal" href="#" class="link hyperlink-notfound">Abbildung 8</a>.2: 2D-Positionsbestimmung mit drei Satelliten.</p>
+                            <p id="ID0EZCAC" class="">Um eine extrem hohe Genauigkeit der Sendezeiten den einzelnen Satelliten zu gewährleisten, hat jeder Satellit bis zur vier Atomuhren an Bord. Da es allerdings zu kostenintensiv wäre, auch die Empfänger mit einer Atomuhr auszustatten, existiert in der Regel ein Uhrenfehler des Empfängers. Dieser wird allerdings durch ein spezielles Korrekturverfahren kompensiert, denn eine Zeitdifferenz von 1/100&#160;Sekunde hätte schon einen Positionsfehler von 3000&#160;km zur Folge. </p>
+                            <p id="ID0E3CAC" class="">Um die Folgen eines Uhrenfehlers zu verdeutlichen, betrachten wir in <a format="html" scope="internal" href="#" class="link hyperlink-notfound">Abbildung 8</a>.3 einen GPS-Empfänger, dessen Uhr, bezogen auf die Uhr der Satelliten, eine halbe Sekunde vorgeht. Somit ist die Laufzeit des Signals vom Sender zum Empfänger eine halbe Sekunde länger als korrekt. Dies hat zur Folge, dass das Ergebnis der Ortsbestimmung Punkt “B“ lautet, während Punkt “A“ der richtige Standort gewesen wäre. </p>
+                            <p id="ID0EHDAC" class="">
+                                <img img-width="340.15748031496065" img-width-mm="89.97922979445579" img-height="246.42519685039372" img-height-mm="65.18495313998352" id="ID0EJDAC" class="inline-graphic" img-orientation="landscape" src="../images/media/image3.jpeg" alt="" title=""/>
+                            </p>
+                            <p id="ID0EPDAC" class="">
+                                <a format="html" scope="internal" href="#" class="link hyperlink-notfound">Abbildung 8</a>.3: 2D-Positionsbestimmung mit zwei Satelliten und Uhrenfehler.</p>
+                            <p id="ID0E2DAC" class="">Zieht man allerdings nun einen dritten Satelliten heran, so liefert die Ortsbestimmung mit Uhrenfehler drei verschiedene Standorte (siehe Schnittpunkte “B“ in <a format="html" scope="internal" href="#" class="link hyperlink-notfound">Abbildung 8</a>.4). Der Uhrenfehler des Empfängers kann also sofort festgestellt werden. Die Uhrzeit des Empfängers wird nun in der Art und Weise korrigiert, dass nur ein Schnittpunkt existiert. Nun läuft die Uhr des Empfängers synchron mit den Atomuhren der Satelliten. Der Standort (Punkt “A“) ist ermittelt. </p>
+                            <p id="ID0EGEAC" class="">
+                                <img img-width="371.0121784776904" img-width-mm="98.140984678259" img-height="398.8278215223097" img-height-mm="105.49884179513006" id="ID0EIEAC" class="inline-graphic" img-orientation="portrait" src="../images/media/image4.jpeg" alt="" title=""/>
+                            </p>
+                            <p id="ID0EOEAC" class="">
+                                <a format="html" scope="internal" href="#" class="link hyperlink-notfound">Abbildung 8</a>.4: 2D-Positionsbestimmung mit drei Satelliten und Korrektur des Uhrenfehlers. </p>
+                            <p id="ID0E3EAC" class="">Für die Ortsbestimmung auf der als bekannt angenommenen zweidimensionalen Erdoberfläche einschließlich der Korrektur des Empfängeruhrenfehlers ist also der Empfang von drei Satellitensignalen erforderlich (2D-Position-Fix). Um die Position im dreidimensionalen Raum zu bestimmen (3D-Position-Fix), benötigt man das Signal eines vierten Satelliten. Mit dessen Hilfe kann auch die Höhe des Empfängers über der Erdoberfläche ermittelt werden. </p>
+                            <p id="ID0EAFAC" class="">Da die vier, aus den Laufzeiten ermittelten Entfernungen  () noch durch die aus dem Uhrenfehler  resultierende Entfernungsabweichung  und eventuelle andere systematische Fehler  verfälscht sind, werden diese als Pseudoentfernungen bezeichnet. Um die Koordinaten des Aufenthaltsorts des Nutzers  zu bestimmen, werden folgende Gleichungen aufgestellt: </p>
+                            <p id="ID0EOFAC" class="">                 	      (8.3)</p>
+                            <p id="ID0EXFAC" class="">                  	        (8.4)</p>
+                            <p id="ID0E5FAC" class="">                  	       (8.5)</p>
+                            <p id="ID0EFGAC" class="">                   	     (8.6)</p>
+                            <p id="ID0EMGAC" class="">    	            (8.7)</p>
+                            <p id="ID0EVGAC" class="">Dabei sind  die Koordinaten des Sendeortes des Satelliten. Mithilfe der Gleichungen 8.3 bis 8.7 lassen sich nun die vier Unbekannten  und T berechnen.</p>
+                            <p id="ID0EYGAC" class="">Um sicherzustellen, dass ein Empfänger auf jedem Punkt der Erdoberfläche die Signale von mindestens vier Satelliten detektieren kann, müssen sich mindestens 24 Satelliten in 20.000 km Höhe befinden. Diese sind auf sechs Umlaufbahnen verteilt (vier Satelliten pro Umlaufbahn) und bewegen sich im Falle von GPS mit einer Geschwindigkeit von annähernd 3,9 km/s. Da die Satelliten allerdings nur eine Lebensdauer von ca. 7,5 Jahren haben und man aktuell rund 60 Tage für das Auswechseln eines Satelliten benötigt, befinden sich sicherheitshalber zu jeder Zeit zwischen 27 und 32 Satelliten eines Navigationssatellitensystems in der Stratosphäre. Um die Kosten zu verringern, versucht man den Wechsel auf zehn Tage zu reduzieren. Dadurch könnte die Anzahl der Satelliten auf 25 reduziert werden (Heidelberg 2002, S. 259).</p>
+                        </div>
+                    </section>
+                    <section>
+                        <h4>
+                            <a name="ID0E4GAC" id="ID0E4GAC">
+                                <span class="section-number">1.2.3</span>
+                                <span class="section-title">8.2.3 Empfänger </span>
+                            </a>
+                        </h4>
+                        <div class="segment">
+                            <p id="ID0EEHAC" class="">Beispielhaft für den Empfänger eines globalen Navigationssatellitensystems zeigt <a format="html" scope="internal" href="#" class="link hyperlink-notfound">Abbildung 8</a>.5 das hochintegrierte GPS-Modul GTPA010 GPS der US-amerikanischen Firma Adafruit Industries. Inklusive Antenne hat es die Abmessungen 25,5&#160;mm × 35,0&#160;mm × 6,5&#160;mm und kostet zwischen 30&#160;Euro und 40&#160;Euro.</p>
+                            <p id="ID0EVHAC" class="align-center ">
+                                <img img-width="417.4222572178478" img-width-mm="110.41748418628923" img-height="278.281469816273" img-height-mm="73.6116468670704" id="ID0EYHAC" class="inline-graphic" img-orientation="landscape" src="../images/media/Adafruit_GPS_Module_Breakout.jpg" alt="" title=""/>
+                            </p>
+                            <p id="ID0E5HAC" class="">
+                                <a format="html" scope="internal" href="#" class="link hyperlink-notfound">Abbildung 8</a>.5: Adafruit GTPA010 GPS module, oomlout: <a class="link" href="https://www.flickr.com/photos/snazzyguy/6985482878/" format="html" scope="external">https://www.flickr.com/photos/snazzyguy/6985482878/</a> (CC BY 2.0).</p>
+                            <p id="ID0ERIAC" class="">Ein typischer Empfänger unterteilt sich in fünf Module, die jeweils aus den folgenden Komponenten bestehen (Bauer 1997, S. 145): </p>
+                            <ul>
+                                <li>
+                                    <p id="ID0EWIAC" class="">Hochfrequenzteil</p>
+                                </li>
+                                <li>
+                                    <p id="ID0E2IAC" class="">Antenne mit RF-Vorverstärker</p>
+                                </li>
+                                <li>
+                                    <p id="ID0EAJAC" class="">Frequenzumsetzer RF/ZF mit A/D-Wandler</p>
+                                </li>
+                                <li>
+                                    <p id="ID0EFJAC" class="">Oszillator mit Frequenzsynthesizer</p>
+                                </li>
+                                <li>
+                                    <p id="ID0EKJAC" class="">Signalerfassung und-verarbeitung</p>
+                                </li>
+                                <li>
+                                    <p id="ID0EPJAC" class="">Signalprozessor für n Kanäle</p>
+                                </li>
+                            </ul>
+                            <p id="ID0ETJAC" class=""/>
+                            <ul>
+                                <li>
+                                    <p id="ID0E2JAC" class="">Messgrößenverarbeitung</p>
+                                </li>
+                                <li>
+                                    <p id="ID0EAKAC" class="">Navigationsprozessor</p>
+                                </li>
+                                <li>
+                                    <p id="ID0EFKAC" class="">Empfängerprozessor</p>
+                                </li>
+                                <li>
+                                    <p id="ID0EKKAC" class="">Uhrzeit/Datumfunktionen</p>
+                                </li>
+                                <li>
+                                    <p id="ID0EPKAC" class="">Nutzerinterface</p>
+                                </li>
+                                <li>
+                                    <p id="ID0EUKAC" class="">Bedieneinheit</p>
+                                </li>
+                                <li>
+                                    <p id="ID0EZKAC" class="">Display</p>
+                                </li>
+                                <li>
+                                    <p id="ID0E5KAC" class="">Interne Speicher</p>
+                                </li>
+                                <li>
+                                    <p id="ID0EDLAC" class="">Stromversorgung</p>
+                                </li>
+                            </ul>
+                            <p id="ID0EHLAC" class="">In <a format="html" scope="internal" href="#" class="link hyperlink-notfound">Abbildung 8</a>.6 sind die wesentlichen Bestandteile eines GPS-Empfängers in Form eines vereinfachten Funktionsschaltbilds dargestellt.</p>
+                            <p id="ID0ESLAC" class="align-center ">
+                                <img img-width="598.0569028871391" img-width-mm="158.19937120070338" img-height="344.6044094488189" img-height-mm="91.15554159581496" id="ID0EVLAC" class="inline-graphic" img-orientation="landscape" src="../images/media/image6.png" alt="" title=""/>
+                            </p>
+                            <p id="ID0E2LAC" class="">
+                                <a format="html" scope="internal" href="#" class="link hyperlink-notfound">Abbildung 8</a>.5: Vereinfachtes Funktionsschaltbild eines GPS-Empfängers.</p>
+                            <p id="ID0EHMAC" class="">Im Hochfrequenzteil wird das Radiofrequenz-Signal (RF) des Satelliten mithilfe einer Antenne aufgenommen, verstärkt und in den niederfrequenten Zwischenfrequenzbereich (ZF, Englisch: Intermediate Frequency) umgesetzt. Der Referenz-Oszillator mit dem Frequenzsynthesizer hat zwei Aufgaben im GPS-Empfänger. Zum einen liefert er die für die Frequenzumsetzung erforderliche Trägerfrequenz und zum anderen stellt er die Taktfrequenz für den digitalen Signalprozessor zur Verfügung. Die Prozessoren der Signal- und Messgrößenverarbeitung regeln die Operationen für die Verarbeitung der Messgrößen. Sie decodieren die frequenzumgesetzten Satellitensignale und berechnen die dreidimensionale Position. Das Nutzerinterface besteht aus dem Bedienteil mit Funktionstasten, einem Display und einem internen Speicher. Neben den Funktionstasten haben besondere Empfänger Modelle ein weiteres Tastenfeld für die Kommunikation. Über ein Display können berechnete Standortkoordinaten, Nummern der sichtbaren Satelliten, Datenumfang und weitere Informationen dargestellt werden. Ein Speicher wird benötigt, um eine Nachbereitung der Signale zu ermöglichen, dabei werden neben internen auch externe Speicher verwendet (Mansfeld 2004, S.147f).</p>
+                        </div>
+                    </section>
+                    <section>
+                        <h4>
+                            <a name="ID0EMMAC" id="ID0EMMAC">
+                                <span class="section-number">1.2.4</span>
+                                <span class="section-title">8.2.4 Messgenauigkeit und Fehlerquellen </span>
+                            </a>
+                        </h4>
+                        <div class="segment">
+                            <p id="ID0ETMAC" class="">Mithilfe der satellitengestützten Ortbestimmung kann die Position des Empfängers sowie evtl. Zusatzinformationen wie dessen Geschwindigkeit mit hoher Genauigkeit ermittelt werden. Um diese Genauigkeit zu beurteilen, müssen die Einflüsse der einzelnen Komponenten betrachtet werden. Sowohl der Sender als auch der Empfänger können ursächlich für einen Fehler verantwortlich sein. Im Nachfolgenden werden die häufigsten Fehlerquellen aufgeführt und Faktoren, welche die Genauigkeit beeinflussen, erläutert.</p>
+                            <p id="ID0EWMAC" class="">
+                                <strong>Fehlerquelle Sender</strong>
+                            </p>
+                            <p id="ID0EZMAC" class="">Die Ungenauigkeit der Koordinaten der einzelnen Satelliten stellt eine zentrale Fehlerquelle dar. Diese resultiert aus der Berechnung der Flugbahn durch die Kontrollsegmente auf der Erde. Die Daten der Referenzumlaufbahn werden in regelmäßigen Abständen aktualisiert und ermöglichen eine Vorhersage der Bahndaten mit einer Genauigkeit von kleiner 1 Meter (GPS). </p>
+                            <p id="ID0E3MAC" class="">Eine weitere Fehlerquelle im Sender kann die Abweichung der Satellitenzeit von der Systemzeit sein. Dies führt zu einer Verringerung der Vorhersagegenauigkeit der Bahndaten und wirkt sich dadurch auf die Entfernungsmessung aus. An Bord des Satelliten befindet sich eine redundant ausgelegte Atomuhr. Beim GPS beträgt die Größenordnung der Abweichung 10<sup>-13 </sup>bis 10<sup>‑12</sup>&#160;Sekunden. Diese hohe Genauigkeit führt dazu, dass die Effekte der Relativität beachtet werden müssen.</p>
+                            <p id="ID0EDNAC" class="">Die Abweichung der Uhrzeit des Satellitenkontrollsystems von der gültigen Weltzeit liegt in der Größenordnung von wenigen Mikrosekunden. Das Kontrollsystem übermittelt seine Uhrzeit in regelmäßigen Abständen an die Satelliten und gewährleistet so eine maximale Abweichung der individuellen Satellitenzeit gegenüber der Kontrollsystemzeit im Nanosekundenbereich.</p>
+                            <p id="ID0EGNAC" class="">Um eine genaue Positionierung zu ermöglichen, müssen sich mindestens vier Satelliten im Bereich der Sichtbarkeit des Empfängers befinden. Um die Funktion über einen längeren Zeitraum zu gewährleisten, sollten jedoch möglichst fünf Satelliten zur Verfügung stehen. Wenn das Signal von mehr Sendern als notwendig detektiert wird, kann der Empfänger seine Position mit Hilfe der stärksten Signale bestimmen und so die Genauigkeit erhöhen. Wenn sich jedoch genau vier Satelliten im sichtbaren Bereich befinden und einer von ihnen hinter dem Horizont verschwindet, kann es zu Aussetzern kommen.</p>
+                            <p id="ID0EJNAC" class="">
+                                <strong>Fehlerquelle Empfänger</strong>
+                            </p>
+                            <p id="ID0EMNAC" class="">Das Auflösungsvermögen des Empfängers wird vom Messrauschen bestimmt. Im Wesentlichen hängt es vom Signal-zu-Rausch-Verhältnis am Signaleingang ab. Da der Sendeort und Sendezeitpunkt des Satellitensignals durch Phasenmodulation übertragen werden, hat die Phasenkomponente des Rauschens den bedeutendsten Einfluss auf das zu messende Signal. Es muss beachtet werden, dass der Einfluss des Rauschens proportional zur Periodendauer der Modulation ist. </p>
+                            <p id="ID0EPNAC" class="">
+                                <strong>Fehlerquelle Übertragung</strong>
+                            </p>
+                            <p id="ID0ESNAC" class="">Das Mikrowellensignal des Satelliten wird bei seiner Ausbreitung durch die Atmosphäre nicht nur gedämpft. Variationen des Brechungsindex aufgrund von Temperaturänderungen und ähnlichem haben eine Brechung zur Folge. Aus den resultierenden Richtungsänderungen ergibt sich ein längerer Weg vom Sender bis zum Empfänger und somit eine Laufzeitverzögerung. Ein weiterer Grund für eine Laufzeitverzögerung können Reflexionen des Signals z.B. an Gebäuden sein. Diese Erscheinungen führen zu einer Verfälschung der Positionsbestimmung. </p>
+                            <p id="ID0EVNAC" class="">Durch Reflexionen ist es außerdem möglich, dass der Empfänger das Signal mehrfach detektiert, was eine Ortsbestimmung u.U. unmöglich macht. Um das zu vermeiden, muss das reflektierte Signal identifiziert und ignoriert werden. Die Selektion kann beispielsweise über die Signalstärke erfolgen, da das duplizierte Signal signifikant schwächer ist als das primäre. </p>
+                            <p id="ID0EYNAC" class="">Zu einem Ausfall des Systems kann es kommen, wenn Interferenzen zwischen dem Satellitensignal mit ähnlichen Signalen anderer Strahlungsquellen auftreten. Störende Signale können z.B. von leistungsstarken TV-Sendeanlagen oder militärischen Störsendern herrühren. </p>
+                            <p id="ID0E2NAC" class="">
+                                <strong>Fehlerquelle Position</strong>
+                            </p>
+                            <p id="ID0E5NAC" class="">Eine Laufzeitverzögerung kann auch aufgrund der Positionierung des Satelliten auftreten. Wenn sich ein Satellit nur wenig oberhalb des Horizonts befindet, muss sein Signal einen relativ langen Weg durch die Atmosphäre zurücklegen und der Einfluss des obengenannten Brechungseffekts ist vergleichsweise groß. Außerdem besteht infolge der Topographie der Erdoberfläche die Gefahr einer Unterbrechung des Signals. Aus diesen Gründen wird es vermieden, tief stehende Satelliten zu verwenden.</p>
+                            <p id="ID0EBOAC" class="">
+                                <strong>Sonstige Fehlerquellen</strong>
+                            </p>
+                            <p id="ID0EEOAC" class="">Darüber hinaus gibt es noch weitere Störquellen wie z.B. kosmische Strahlung im Frequenzbereich des Satellitensignals. Des Weiteren muss beachtet werden, dass der Ursprung der meisten satellitenbasierten Navigationssysteme militärischer Natur ist und die jeweilige Armee die Verfügungsgewalt über das System hat. Das Militär kann das zivile Signal jederzeit und ohne Vorwarnung abschalten oder dessen Genauigkeit reduzieren (Mansfeld 2010, S.170 ff.).</p>
+                        </div>
+                    </section>
+                </section>
+                <section>
+                    <h3>
+                        <a name="ID0EJOAC" id="ID0EJOAC">
+                            <span class="section-number">1.3</span>
+                            <span class="section-title">8.3 Anwendungen</span>
+                        </a>
+                    </h3>
+                    <div class="segment">
+                        <p id="ID0EQOAC" class="">In diesem Abschnitt werden die Einsatzgebiete satellitengestützter Ortungssysteme beschrieben. Ursprünglich war das Ortungssystem ausschließlich für militärische Anwendung vorgesehen. Durch die inzwischen preiswerte Technik sind in den letzten Jahren außerordentlich viele Einsatzgebiete im zivilen Bereich entstanden. In nachfolgender Tabelle sind die Einsatzgebiete und die entsprechenden Anwendungen mit ihren wichtigsten technischen Angaben beschrieben.</p>
+                        <div class="table-container">
+                            <table width="100%" data-column-count="3">
+                                <colgroup>
+                                    <col width="23.445767195767196*"/>
+                                    <col width="54.6847442680776*"/>
+                                    <col width="21.869488536155202*"/>
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <td class="" colspan="3">
+                                            <p id="ID0EQPAC" class="text-wrap">
+                                                <strong>
+                                                    <a format="html" scope="internal" href="#" class="link hyperlink-notfound">Tabelle 8</a>.1:</strong> Anwendungsgebiete satellitengestützter Ortsbestimmung und Ortung.</p>
+                                            <p id="ID0E3PAC" class="not-collapsible">&#160;</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="">
+                                            <p id="ID0EKAAE" class="align-center text-wrap">Einsatzgebiet</p>
+                                        </td>
+                                        <td class="">
+                                            <p id="ID0EYAAE" class="align-center text-wrap">Bemerkung</p>
+                                        </td>
+                                        <td class="">
+                                            <p id="ID0EGBAE" class="align-center text-wrap">Quelle</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="">
+                                            <p id="ID0EVBAE" class="text-wrap">Straßenverkehr</p>
+                                        </td>
+                                        <td class="">
+                                            <p id="ID0ECCAE" class="text-wrap">Navigation.</p>
+                                            <p id="ID0EFCAE" class="text-wrap">Geschwindigkeitskontrolle.</p>
+                                            <p id="ID0EICAE" class="text-wrap">Navigation des „fahrerlosen“ Autos.</p>
+                                        </td>
+                                        <td class=""/>
+                                    </tr>
+                                    <tr>
+                                        <td class="">
+                                            <p id="ID0EADAE" class="text-wrap">Schifffahrt (Beacon-Empfänger)    </p>
+                                        </td>
+                                        <td class="">
+                                            <p id="ID0ENDAE" class="text-wrap">Navigation.</p>
+                                            <p id="ID0EQDAE" class="text-wrap">Differentielles GPS ermöglicht genauere Positionierung für die Schifffahrt (direktere Fährverbindung zwischen Schweden und Finnland).</p>
+                                            <p id="ID0ETDAE" class="text-wrap">Ölförderindustrie (Vermessung von Plattformen und Verlegung von Pipelines).</p>
+                                            <p id="ID0EWDAE" class="text-wrap">Verlegung von Übersee-Nachrichtenkabeln (genaue Bestimmung von defekten Stellen).</p>
+                                        </td>
+                                        <td class="">
+                                            <p id="ID0EDEAE" class="text-wrap">
+                                                <a class="link" href="http://www.swix.ch" format="html" scope="external">www.swix.ch</a>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="">
+                                            <p id="ID0EYEAE" class="text-wrap">Luftfahrt</p>
+                                        </td>
+                                        <td class="">
+                                            <p id="ID0EFFAE" class="text-wrap">Navigation.</p>
+                                            <p id="ID0EIFAE" class="text-wrap">Feinere Definition von Flugrouten; keine starren Flugrouten mittels Funkfeuer.</p>
+                                            <p id="ID0ELFAE" class="text-wrap">Drohnennavigation.</p>
+                                        </td>
+                                        <td class="">
+                                            <p id="ID0EYFAE" class="text-wrap">
+                                                <a class="link" href="http://www.cesah.com" format="html" scope="external">www.cesah.com</a>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="">
+                                            <p id="ID0ENGAE" class="text-wrap">Diebstahlschutz</p>
+                                        </td>
+                                        <td class="">
+                                            <p id="ID0E1GAE" class="text-wrap">Ortung und Verfolgung eines Automobils, Schiffs, Flugzeugs.</p>
+                                            <p id="ID0E4GAE" class="text-wrap">Alarm beim Verlassen einer definierten Zone. </p>
+                                        </td>
+                                        <td class="">
+                                            <p id="ID0EKHAE" class="text-wrap">
+                                                <a class="link" href="http://www.mapntrack.de" format="html" scope="external">www.mapntrack.de</a>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="">
+                                            <p id="ID0E6HAE" class="text-wrap">Disposition und Logistik</p>
+                                        </td>
+                                        <td class="">
+                                            <p id="ID0EMIAE" class="text-wrap">Bestimmung des Standorts eines Automobils, Schiffs, Flugzeugs.</p>
+                                            <p id="ID0EPIAE" class="text-wrap">Überwachung von Route, Fahrleistung, Geschwindigkeit, Standzeiten, Kraftstoffverbrauch.</p>
+                                        </td>
+                                        <td class="">
+                                            <p id="ID0E3IAE" class="text-wrap">
+                                                <a class="link" href="http://www.mapntrack.de" format="html" scope="external">www.mapntrack.de</a>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="">
+                                            <p id="ID0ERJAE" class="text-wrap">GPS-Rettung/ Kommunikation</p>
+                                        </td>
+                                        <td class="">
+                                            <p id="ID0E5JAE" class="text-wrap">Kommunikation an Orten ohne Mobilfunknetz.</p>
+                                            <p id="ID0EBKAE" class="text-wrap">Senden eines Notfallsignals.</p>
+                                            <p id="ID0EEKAE" class="text-wrap">GPS-Messenger.</p>
+                                        </td>
+                                        <td class="">
+                                            <p id="ID0ERKAE" class="text-wrap">
+                                                <a class="link" href="http://www.gpsvision.ch" format="html" scope="external">www.gpsvision.ch</a>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="">
+                                            <p id="ID0EGLAE" class="text-wrap">Vermessung</p>
+                                        </td>
+                                        <td class="">
+                                            <p id="ID0ETLAE" class="text-wrap">Grenzvermessung.</p>
+                                            <p id="ID0EWLAE" class="text-wrap">Topografische Karten.</p>
+                                            <p id="ID0EZLAE" class="text-wrap">Überwachungsmessungen (Hochhäuser, Brücken, Stauanlagen, Türme, Verkehrsanlagen, Maschinen- und Industrieanlagen, Hänge, Gletscher)</p>
+                                            <p id="ID0E3LAE" class="text-wrap">Seismische Kontrollmessungen.</p>
+                                        </td>
+                                        <td class="">
+                                            <p id="ID0EJMAE" class="text-wrap">
+                                                <a class="link" href="http://www.geosoft-gps.de" format="html" scope="external">www.geosoft-gps.de</a>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="">
+                                            <p id="ID0E5MAE" class="text-wrap">Geo-Referenzierung </p>
+                                        </td>
+                                        <td class="">
+                                            <p id="ID0ELNAE" class="text-wrap">Messung und Präsentation geodynamischer Phänomene (Polbewegungen, Erdgezeiten und Krustenbewegungen).</p>
+                                            <p id="ID0EONAE" class="text-wrap">Bestimmung des Gravitationsfelds auf der Erde einschließlich temporärer Veränderungen.</p>
+                                            <p id="ID0ERNAE" class="text-wrap">Vermessung tektonischer Plattenbewegungen.</p>
+                                        </td>
+                                        <td class="">
+                                            <p id="ID0E5NAE" class="text-wrap">
+                                                <a class="link" href="http://www.hft-stuttgart.de" format="html" scope="external">www.hft-stuttgart.de</a>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="">
+                                            <p id="ID0ETOAE" class="text-wrap">Geoinformations-system</p>
+                                        </td>
+                                        <td class="">
+                                            <p id="ID0EAPAE" class="text-wrap">Erfassung und Analyse räumlicher Daten: Städteplanung, Natürliche Ressourcen, Fortbestand, Eigentumssicherung, Wertermittlung.</p>
+                                        </td>
+                                        <td class="">
+                                            <p id="ID0ENPAE" class="text-wrap">
+                                                <a class="link" href="http://www.geosoft-gps.de" format="html" scope="external">www.geosoft-gps.de</a>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="">
+                                            <p id="ID0ECQAE" class="text-wrap">Landwirtschaft</p>
+                                        </td>
+                                        <td class="">
+                                            <p id="ID0EPQAE" class="text-wrap">Gezielte Bodenproben, Sähen, Ernten, Pflügen, kontrolliertes Düngen.</p>
+                                        </td>
+                                        <td class="">
+                                            <p id="ID0E3QAE" class="text-wrap">
+                                                <a class="link" href="http://www.geosoft-gps.de" format="html" scope="external">www.geosoft-gps.de</a>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="">
+                                            <p id="ID0ERRAE" class="text-wrap">Militär</p>
+                                        </td>
+                                        <td class="">
+                                            <p id="ID0E5RAE" class="text-wrap">Autonome Waffensteuerung und Zielfindung: Cruise Missiles und präzisionsgeleitete Geschosse.</p>
+                                            <p id="ID0EBSAE" class="text-wrap">GPS-Satelliten verfügen über Detektoren für atomare Einschläge (US Nuclear Detonation Detection System).</p>
+                                        </td>
+                                        <td class="">
+                                            <p id="ID0EOSAE" class="text-wrap">
+                                                <a class="link" href="http://www.aphroland.de" format="html" scope="external">www.aphroland.de</a>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h3>
+                        <a name="ID0E1SAE" id="ID0E1SAE">
+                            <span class="section-number">1.4</span>
+                            <span class="section-title">8.4 Globale Navigationssatellitensysteme</span>
+                        </a>
+                    </h3>
+                    <div class="segment">
+                        <p id="ID0EBTAE" class="">Weltweit existieren vier globale Navigationssatellitensysteme. Dabei sind das US-amerikanische GPS und das russische GLONASS vollständig ausgebaut und im Einsatz, während sich Galileo, das System der Europäischen Union, und das chinesische BeiDou noch im Aufbau befinden. Jedes der Systeme wird vom Erdboden aus kontrolliert und unterteilt sich in die folgenden drei Segmente (Zogg 2006, S.19):</p>
+                        <ul>
+                            <li>
+                                <p id="ID0EGTAE" class="">Weltraumsegment (Satelliten)</p>
+                            </li>
+                            <li>
+                                <p id="ID0ELTAE" class="">Kontrollsegment (Bodenstationen)</p>
+                            </li>
+                            <li>
+                                <p id="ID0EQTAE" class="">Benutzersegment (z.B. GPS-Empfänger)</p>
+                            </li>
+                        </ul>
+                        <p id="ID0EUTAE" class="">Die Hauptaufgaben des Kontrollsegments sind das Beobachten und Steuern der Satellitenbewegungen sowie das Überwachen und Synchronisieren der Satellitenuhren. Das Kontrollsegment eines Navigationssatellitensystems setzt sich im Wesentlichen aus den folgenden Stationen zusammen (Zogg 2006, S.26, Bauer 1997, S.158):</p>
+                        <ul>
+                            <li>
+                                <p id="ID0E1TAE" class="">Hauptkontrollstation (Master Control Station): Diese fordert die von den Monitorstationen erfassten Daten ab und berechnet daraus die Positionsdaten der einzelnen Satelliten (Ephemeriden). Die eventuell erforderlichen Positions- oder Zeitkorrekturen werden in einer Navigationsnachricht zusammengestellt und mithilfe der Bodenkontrollstationen an den jeweiligen Satelliten übermittelt. Jedes Navigationssatellitensystem hat eine oder zwei Hauptkontrollstationen.</p>
+                            </li>
+                            <li>
+                                <p id="ID0E6TAE" class="">Monitorstationen (Monitor Stations): Diese sind weltweit in der Nähe des Äquators verteilt und bestehen im Wesentlichen aus Atomuhren, Sensoren zum Ermitteln von Navigationsdaten und einem Satellitensignal-Empfänger. Die Stationen detektieren die Signale der Satelliten und übermitteln diese zur Weiterverarbeitung an die Hauptkontrollstation. Jeder Satellit wird zu jeder Zeit von mindestens drei der weltweit verteilten Monitorstationen eines Navigationssatellitensystems beobachtet. GPS verfügt über 17 Monitorstationen.</p>
+                            </li>
+                            <li>
+                                <p id="ID0EEUAE" class="">Bodenkontrollstationen (Ground Control Stations) oder Bodenantennen (Ground Antennas): Diese übermitteln die Daten der Hauptkontrollstation an die einzelnen Satelliten. Jeder Satellit eines Navigationssatellitensystems erhält so mehrmals am Tag eine Navigationsnachricht (GPS: Alle acht Stunden). Jeder Satellit befindet sich zu jeder Zeit in der Reichweite von mindestens zwei der weltweit verteilten Bodenkontrollstationen. GPS verfügt über 20 Bodenkontrollstationen, darunter eine an jeder Monitorstation.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <section>
+                        <h4>
+                            <a name="ID0EKUAE" id="ID0EKUAE">
+                                <span class="section-number">1.4.1</span>
+                                <span class="section-title">8.4.1 GPS </span>
+                            </a>
+                        </h4>
+                        <div class="segment">
+                            <p id="ID0ERUAE" class="">Das US-amerikanische „Global Positioning System“ (GPS) ist seit 1995 im Betrieb. Es wird von der „Master Control Station“ in Schriever im US-Bundesstaat Colorado gesteuert. Das Weltraumsegment setzt sich aus mindestens 24 Satelliten zusammen (zurzeit 31). Diese umkreisen die Erde in 20.180&#160;km Höhe auf sechs verschiedenen Ebenen mit elliptischen Umlaufbahnen. Je Ebene bewegen sich mindestens vier Satelliten mit einer Umlaufzeit von etwa 11:58 Stunden (Bauer 1997, S.155). Die Satelliten übertragen ihre Signale auf zwei Bändern mit den Trägerfrequenzen 1,57542 GHz (L1) und 1,22760 GHz (L2) (Bauer 1997, S.161).</p>
+                            <p id="ID0EUUAE" class="">Die GPS-Empfangsgeräte werden entsprechend ihrer Nutzung in militärische und zivile unterschieden. Dies betrifft im Wesentlichen das Genauigkeitspotential der Geräte. Der „Precise Positioning Service“ (PPS) schöpft die volle Genauigkeit des GPS aus. Er ist allerdings verschlüsselt und steht nur bestimmten Benutzern, größtenteils militärischen Dienststellen, zur Verfügung. Der „Standard Positioning Service“ (SPS) kann hingegen weltweit uneingeschränkt verwendet werden. Es hat jedoch offiziell eine eingeschränkte Navigationsgenauigkeit von 5&#160;m bis 10&#160;m (Bauer 1997, S.168). Messungen der US-amerikanischen „Federal Aviation Administration“ aus dem Jahr 2014 haben sogar eine mittlere horizontale Genauigkeit von 3,5&#160;m ergeben. In vielen Regionen liegt sie in der Größenordnung von 1&#160;m. Noch höhere Präzision ist durch die Verwendung von Erweiterungssystemen, wie z.B. dem durch zusätzlich Bodenstationen unterstützen Differentiellen GPS (DGPS), erreichbar. Dies ermöglicht eine Ortsbestimmung in Echtzeit mit einer Genauigkeit von wenigen Zentimetern. Durch eine entsprechende Aufbereitung der Signale lässt sich diese sogar bis in den Millimeterbereich reduzieren.</p>
+                            <p id="ID0EXUAE" class="">Offizielle Betreiberseite: <a class="link" href="http://www.gps.gov" format="html" scope="external">www.gps.gov</a>
+                            </p>
+                        </div>
+                    </section>
+                    <section>
+                        <h4>
+                            <a name="ID0EEVAE" id="ID0EEVAE">
+                                <span class="section-number">1.4.2</span>
+                                <span class="section-title">8.4.2 GLONASS</span>
+                            </a>
+                        </h4>
+                        <div class="segment">
+                            <p id="ID0ELVAE" class="">Das russische GLONASS (Globalnaya Navigatsionnaya Sputnikovaya Sistema) hat sein „System Control Center“ in Krasnoznamensk in der Nähe von Moskau. Dieses Navigationssystem wurde vom Militär der ehemaligen UdSSR entwickelt und wird nun von der Russischen Föderation betrieben. GLONASS ist ebenfalls seit 1995 in Betrieb, wenn auch nicht von Anfang an mit einer globalen Abdeckung. Die Satelliten befinden sich in 19.130&#160;km Höhe und senden auf den beiden Trägerfrequenzen 1,602&#160;GHz (L1) und 1,246 GHz (L2). </p>
+                            <p id="ID0EOVAE" class="">Das GLONASS ist prinzipiell wie das GPS aufgebaut und hat ein ähnliches Leistungsvermögen. Alle vom GPS geläufigen Mess- und Auswerteverfahren können auch beim GLONASS angewendet werden. Es muss jedoch beachtet werden, dass bei GLONASS weniger Satelliten zur Verfügung stehen (zurzeit 28) und aus diesem Grund die Genauigkeit geringer ausfallen kann. Es besteht die Möglichkeit des Einsatzes kombinierter GPS/GLONASS Empfänger. Diese können Satellitensignale beider Systeme für die Ortsbestimmung nutzen. Die Kombination ermöglicht eine höhere Genauigkeit und Zuverlässigkeit und bietet sich insbesondere zur Verwendung an Bord von Flugzeugen und Schiffen an, denn die internationalen Regeln schreiben mehrere voneinander unabhängige Navigationssysteme vor (Bauer 2010, S .241 ff.). Auch GLONASS sendet ein verschlüsseltes und ein unverschlüsseltes Signal. Die offizielle horizontale Genauigkeit des öffentlichen Signals beträgt 5&#160;m bis 10&#160;m.</p>
+                            <p id="ID0ERVAE" class="">Offizielle Betreiberseite: <a class="link" href="http://www.glonass-iac.ru/" format="html" scope="external">www.glonass-iac.ru/</a>
+                            </p>
+                        </div>
+                    </section>
+                    <section>
+                        <h4>
+                            <a name="ID0E3VAE" id="ID0E3VAE">
+                                <span class="section-number">1.4.3</span>
+                                <span class="section-title">8.4.3 Galileo</span>
+                            </a>
+                        </h4>
+                        <div class="segment">
+                            <p id="ID0EDWAE" class="">Da GPS und GLONASS von militärischen Institutionen betrieben werden, gibt es Bestreben von der Europäischen Union und anderen Staaten, ein ziviles und unabhängiges Navigationssatellitensystem aufzubauen. Die Aufsicht und Realisierung des Projekts obliegt der „Agentur für das europäische globale Navigationssatellitensystem“ und der europäischen Weltraumorganisation (ESA).</p>
+                            <p id="ID0EGWAE" class="">Das nach dem italienischen Wissenschaftler Galileo Galilei benannte Satellitensystem verfügt über zwei „Control Center“, eines im italienischen Fucino und ein zweites im bayerischen Oberpfaffenhofen, auf dem Gelände des Deutschen Zentrums für Luft- und Raumfahrt (DLR). Da sich Galileo nicht prinzipiell von GPS und GLONASS unterscheidet, sind kombinierte Empfänger für alle drei System möglich, was zu einer erheblichen Erhöhung der Verfügbarkeit und Genauigkeit führen würde. </p>
+                            <p id="ID0EJWAE" class="">Im Gegensatz zu GPS und GLONASS ist Galileo von Anfang an als System der zweiten Generation geplant. Während die Informationsübertragung von GPS und GLONASS auf einem Zweikanalbetrieb basiert, nutzt Galileo zehn Informationskanäle. Das ermöglicht eine erhebliche Reduzierung der durch die Ionosphäre verursachten Fehler und bietet mehr Sicherheit bei einer Störung der Basisfrequenz. Ein weiterer Vorteil liegt in der fortgeschrittenen Computertechnologie. Diese schafft die Voraussetzung für deutlich kompaktere und leistungsstärkere Sender und Satelliten (Mansfeld 2010, S. 221 ff.). Galileo-Satelliten befinden sich in einer Höhe von 23.222 km und senden in den drei Trägerfrequenzbereichen 1,164&#160;GHz bis 1,215 GHz (E5a and E5b), 1,260&#160;GHz bis 1,300 GHz (E6) und 1,559&#160;GHz bis 1,592 GHz (E2-L1-E11). Der Betrieb soll im Jahr 2020 aufgenommen werden. Es sind Genauigkeiten von 1&#160;m für das unverschlüsselte Signal und 1&#160;cm für das gebührenpflichtige verschlüsselte Signal prognostiziert. </p>
+                            <p id="ID0EMWAE" class="">Offizielle Betreiberseite: <a class="link" href="http://www.esa.int/" format="html" scope="external">www.esa.int/</a>
+                                <a class="link" href="http://www.gsa.europa.eu/" format="html" scope="external">http://www.gsa.europa.eu/</a>
+                            </p>
+                        </div>
+                    </section>
+                    <section>
+                        <h4>
+                            <a name="ID0EBXAE" id="ID0EBXAE">
+                                <span class="section-number">1.4.4</span>
+                                <span class="section-title">8.4.4 BeiDou</span>
+                            </a>
+                        </h4>
+                        <div class="segment">
+                            <p id="ID0EIXAE" class="">Nach fünf Jahren der Kooperation mit der EU im Rahmen des Galileo-Projekts hat die Regierung der Volkrepublik China im Jahr 2008 beschlossen, ihr eigentlich nur für militärische Zwecke geplantes globales Navigationssatellitensystem auch für zivile Zwecke auszubauen. Das Projekt trägt die Bezeichnung „BeiDou Navigation Satellite System“ oder einfach BeiDou (chinesisch für das Sternbild „Großer Bär“). BeiDou wird vom „Beijing Satellite Navigation Center“ in Peking gesteuert.</p>
+                            <p id="ID0ELXAE" class="">Das Grundprinzip und das Leistungsvermögen des BeiDou-Systems sollen mit GPS und GLONASS vergleichbar sein. Dabei arbeitet BeiDou genau wie das amerikanische und das russische System mit einem offenen Dienst für zivile Nutzer und einem verschlüsselten Dienst mit höherer Genauigkeit und größerer Zuverlässigkeit für autorisierte und militärische Nutzer (Mansfeld 2010, S. 267 ff.). BeiDou-Umlaufbahnen befinden sich in einer Höhe von 21.150&#160;km. Die Satelliten senden auf den vier Trägerfrequenzen 1,561098&#160;GHz (B1), 1,589742&#160;GHz (B1-2), 1,20714&#160;GHz (B2) und 1,26852&#160;GHz (B3). Zurzeit befinden sich 20 Satelliten in der Umlaufbahn. Der Betrieb soll (wie der von Galileo) im Jahr 2020 aufgenommen werden. Es sind Genauigkeiten von 10&#160;m für das unverschlüsselte Signal und 0,1&#160;cm für das verschlüsselte Signal geplant.</p>
+                            <p id="ID0EOXAE" class="">Offizielle Betreiberseite: <a class="link" href="http://www.beidou.gov.cn/%20" format="html" scope="external">www.beidou.gov.cn/ </a>
+                            </p>
+                        </div>
+                    </section>
+                    <section>
+                        <h4>
+                            <a name="ID0E2XAE" id="ID0E2XAE">
+                                <span class="section-number">1.4.5</span>
+                                <span class="section-title">8.4.5 Übersicht </span>
+                            </a>
+                        </h4>
+                        <div class="segment">
+                            <p id="ID0ECYAE" class="">Die <a format="html" scope="internal" href="#" class="link hyperlink-notfound">Tabelle 8</a>.2 beinhaltet einen Vergleich der vier existierenden globalen Navigationssatellitensysteme.</p>
+                            <div class="table-container">
+                                <table width="100%" data-column-count="9">
+                                    <colgroup>
+                                        <col width="8.498864926220203*"/>
+                                        <col width="17.217650397275822*"/>
+                                        <col width="7.917139614074915*"/>
+                                        <col width="6.980703745743473*"/>
+                                        <col width="8.903234960272417*"/>
+                                        <col width="8.903234960272417*"/>
+                                        <col width="17.70005675368899*"/>
+                                        <col width="12.840522133938705*"/>
+                                        <col width="11.038592508513053*"/>
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td class="" colspan="7">
+                                                <p id="ID0E5ZAE" class="text-wrap">
+                                                    <strong>
+                                                        <a format="html" scope="internal" href="#" class="link hyperlink-notfound">Tabelle 8</a>.2:</strong> Übersicht der <a class="link" href="http://de.wikipedia.org/wiki/Globales_Navigationssatellitensystem" format="html" scope="external">globalen Navigationssatellitensystem</a>en (Stand Februar 2016).</p>
+                                            </td>
+                                            <td class=""/>
+                                            <td class=""/>
+                                        </tr>
+                                        <tr>
+                                            <td class="">
+                                                <p id="ID0E31AE" class="align-center text-wrap">Name</p>
+                                            </td>
+                                            <td class="">
+                                                <p id="ID0EC2AE" class="align-center text-wrap">Betreiber</p>
+                                            </td>
+                                            <td class="">
+                                                <p id="ID0EI2AE" class="align-center text-wrap">Nutzen</p>
+                                            </td>
+                                            <td class="">
+                                                <p id="ID0EO2AE" class="align-center text-wrap">Status</p>
+                                            </td>
+                                            <td class="">
+                                                <p id="ID0EU2AE" class="align-center text-wrap">Satelliten in Umlaufbahn</p>
+                                            </td>
+                                            <td class="">
+                                                <p id="ID0E12AE" class="align-center text-wrap">Umlaufbahn-höhe</p>
+                                            </td>
+                                            <td class="">
+                                                <p id="ID0EA3AE" class="align-center text-wrap">Trägerfrequenz in GHz</p>
+                                                <p id="ID0EE3AE" class="align-center text-wrap">(Band)</p>
+                                            </td>
+                                            <td class="">
+                                                <p id="ID0EK3AE" class="align-center text-wrap">Präzision öffentlich</p>
+                                                <p id="ID0EO3AE" class="align-center text-wrap">(verschlüsselt)</p>
+                                            </td>
+                                            <td class="">
+                                                <p id="ID0EU3AE" class="align-center text-wrap">Homepage</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="">
+                                                <p id="ID0E23AE" class="align-center text-wrap">GPS</p>
+                                            </td>
+                                            <td class="">
+                                                <p id="ID0EB4AE" class="align-center text-wrap">Verteidigungsministerium der USA</p>
+                                            </td>
+                                            <td class="">
+                                                <p id="ID0EH4AE" class="align-center text-wrap">militärisch/</p>
+                                                <p id="ID0EL4AE" class="align-center text-wrap">zivil</p>
+                                            </td>
+                                            <td class="">
+                                                <p id="ID0ER4AE" class="align-center text-wrap">seit 1995 in Betrieb</p>
+                                            </td>
+                                            <td class="">
+                                                <p id="ID0EX4AE" class="align-center text-wrap">31</p>
+                                            </td>
+                                            <td class="">
+                                                <p id="ID0E44AE" class="align-center text-wrap">20.180 km</p>
+                                            </td>
+                                            <td class="">
+                                                <p id="ID0ED5AE" class="align-center text-wrap">1,57542 (L1)</p>
+                                                <p id="ID0EH5AE" class="align-center text-wrap">1,2276 (L2)</p>
+                                            </td>
+                                            <td class="">
+                                                <p id="ID0EN5AE" class="align-center text-wrap">3,5&#160;m</p>
+                                                <p id="ID0ER5AE" class="align-center text-wrap">(ca. 1&#160;m)</p>
+                                            </td>
+                                            <td class="">
+                                                <p id="ID0EX5AE" class="align-center text-wrap">
+                                                    <a class="link" href="http://www.gps.gov" format="html" scope="external">gps.gov</a>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="">
+                                                <p id="ID0ED6AE" class="align-center text-wrap">GLONASS</p>
+                                            </td>
+                                            <td class="">
+                                                <p id="ID0EJ6AE" class="align-center text-wrap">Verteidigungsministerium der Russischen Föderation</p>
+                                            </td>
+                                            <td class="">
+                                                <p id="ID0EP6AE" class="align-center text-wrap">militärisch/</p>
+                                                <p id="ID0ET6AE" class="align-center text-wrap">zivil</p>
+                                            </td>
+                                            <td class="">
+                                                <p id="ID0EZ6AE" class="align-center text-wrap">seit 1995 in Betrieb</p>
+                                            </td>
+                                            <td class="">
+                                                <p id="ID0EAAAG" class="align-center text-wrap">28</p>
+                                            </td>
+                                            <td class="">
+                                                <p id="ID0EGAAG" class="align-center text-wrap">19.130 km</p>
+                                            </td>
+                                            <td class="">
+                                                <p id="ID0EMAAG" class="align-center text-wrap">ca. 1,602 (L1)</p>
+                                                <p id="ID0EQAAG" class="align-center text-wrap">ca. 1,246 (L2)</p>
+                                            </td>
+                                            <td class="">
+                                                <p id="ID0EWAAG" class="align-center text-wrap">5 – 10&#160;m</p>
+                                                <p id="ID0E1AAG" class="align-center text-wrap">(unbekannt)</p>
+                                            </td>
+                                            <td class="">
+                                                <p id="ID0EABAG" class="align-center text-wrap">
+                                                    <a class="link" href="http://www.glonass-iac.ru" format="html" scope="external">glonass-iac.ru</a>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="">
+                                                <p id="ID0EMBAG" class="align-center text-wrap">Galileo</p>
+                                            </td>
+                                            <td class="">
+                                                <p id="ID0ESBAG" class="align-center text-wrap">Agentur für das europäische globale Navigationssatelliten-system / ESA</p>
+                                            </td>
+                                            <td class="">
+                                                <p id="ID0EYBAG" class="align-center text-wrap">zivil</p>
+                                            </td>
+                                            <td class="">
+                                                <p id="ID0E5BAG" class="align-center text-wrap">ab 2020</p>
+                                            </td>
+                                            <td class="">
+                                                <p id="ID0EECAG" class="align-center text-wrap">12</p>
+                                            </td>
+                                            <td class="">
+                                                <p id="ID0EKCAG" class="align-center text-wrap">23.222 km</p>
+                                            </td>
+                                            <td class="">
+                                                <p id="ID0EQCAG" class="align-center text-wrap">1,164–1,215 (E5a/E5b)</p>
+                                                <p id="ID0EUCAG" class="align-center text-wrap">1,260–1,300 (E6)</p>
+                                                <p id="ID0EYCAG" class="align-center text-wrap">1,559–1.592 (E2/L1/E11)</p>
+                                            </td>
+                                            <td class="">
+                                                <p id="ID0E5CAG" class="align-center text-wrap">Planung: 1&#160;m</p>
+                                                <p id="ID0ECDAG" class="align-center text-wrap">(0,01&#160;m)</p>
+                                            </td>
+                                            <td class="">
+                                                <p id="ID0EIDAG" class="align-center text-wrap">
+                                                    <a class="link" href="http://www.gsa.europa.eu" format="html" scope="external">gsa.europa.eu</a>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="">
+                                                <p id="ID0EUDAG" class="align-center text-wrap">BeiDou</p>
+                                            </td>
+                                            <td class="">
+                                                <p id="ID0E1DAG" class="align-center text-wrap">Verteidigungsministerium der Volksrepublik China</p>
+                                            </td>
+                                            <td class="">
+                                                <p id="ID0EAEAG" class="align-center text-wrap">militärisch/</p>
+                                                <p id="ID0EEEAG" class="align-center text-wrap">zivil</p>
+                                            </td>
+                                            <td class="">
+                                                <p id="ID0EKEAG" class="align-center text-wrap">ab 2020</p>
+                                            </td>
+                                            <td class="">
+                                                <p id="ID0EQEAG" class="align-center text-wrap">20</p>
+                                            </td>
+                                            <td class="">
+                                                <p id="ID0EWEAG" class="align-center text-wrap">21.150 km</p>
+                                            </td>
+                                            <td class="">
+                                                <p id="ID0E3EAG" class="align-center text-wrap">1,561098 (B1)</p>
+                                                <p id="ID0EAFAG" class="align-center text-wrap">1,589742 (B1-2)</p>
+                                                <p id="ID0EEFAG" class="align-center text-wrap">1,20714 (B2)</p>
+                                                <p id="ID0EIFAG" class="align-center text-wrap">1,26852 (B3)</p>
+                                            </td>
+                                            <td class="">
+                                                <p id="ID0EOFAG" class="align-center text-wrap">Planung: 10&#160;m </p>
+                                                <p id="ID0ESFAG" class="align-center text-wrap">(0,1&#160;m)</p>
+                                            </td>
+                                            <td class="">
+                                                <p id="ID0EYFAG" class="align-center text-wrap">
+                                                    <a class="link" href="http://www.beidou.gov.cn" format="html" scope="external">beidou.gov.cn</a>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                <section class="sectionempty">
+                    <h3>
+                        <a name="ID0EDGAG" id="ID0EDGAG">
+                            <span class="section-number">1.5</span>
+                            <span class="section-title">[Kapitel nicht relevant]</span>
+                        </a>
+                    </h3>
+                </section>
+                <section>
+                    <h3>
+                        <a name="ID0EJGAG" id="ID0EJGAG">
+                            <span class="section-number">1.6</span>
+                            <span class="section-title">8.5 Zusammenfassung</span>
+                        </a>
+                    </h3>
+                    <div class="segment">
+                        <p id="ID0EQGAG" class="">Die satellitengestützte Ortsbestimmung ist ein laufzeitbasiertes Verfahren und stellt das Funktionsprinzip von globalen Navigationssatellitensystemen dar. Im Gegensatz zu dem in Kapitel <a format="html" scope="internal" href="#" class="link hyperlink-notfound">Kapitel 7</a> beschriebenen Puls-Echo-Verfahren handelt es sich allerdings um eine Einweg-Entfernungsmessung, bei der Sender und Empfänger weit voneinander entfernt sind. Hierfür werden Satelliten in eine Umlaufbahn um die Erde in Höhen zwischen 19.130&#160;km und 23.222&#160;km gebracht. Von dort senden sie ein Mikrowellensignal mit einer Trägerfrequenz zwischen 1,164&#160;GHz und 1,602&#160;GHz, das in codierter Form die exakten Sendedaten (Sendeort und Sendezeit) übermittelt. Dieses Signal wird von einem Empfänger des entsprechenden Navigationssatellitensystems auf der Erde detektiert. Aus der Laufzeit des Signals (Differenz zwischen Empfangszeit und Sendezeit) und der Annahme einer konstanten Ausbreitungsgeschwindigkeit wird der Abstand vom Sendeort berechnet. Die Kugelflächen um drei Sendeorte ergeben einen eindeutigen Schnittpunkt im Raum. Durch die Auswertung von vier Satellitensignalen können die dreidimensionale Position des Empfängers und dessen Uhrenfehler bestimmt werden.</p>
+                        <p id="ID0E3GAG" class="">Die Empfänger für globale Navigationssatellitensysteme sind inzwischen recht kostengünstig (30&#160;Euro bis 40&#160;Euro) und kompakt (Grundfläche: 10&#160;cm<sup>2</sup>, Höhe 0,5&#160;cm). Das von der Antenne aufgenommene Satellitensignal wird in den niederfrequenten Frequenzbereich umgesetzt. Anschließend decodieren die Prozessoren der Signal- und Messdatenverarbeitung das Signal und berechnen die dreidimensionale Position.</p>
+                        <p id="ID0EBHAG" class="">Die Genauigkeit der Ortsbestimmung wird durch die Komponenten des Systems bestimmt. Insbesondere die Präzision der Satellitenposition und die Synchronizität der Satellitenzeiten stellen wesentliche Fehlerquellen dar. Auch der Winkel, unter dem die Satelliten für den Empfänger sichtbar erscheinen, ist relevant. Um Fehler durch die Topografie der Erde oder die lange atmosphärische Transmission zu vermeiden, werden tief stehende Satelliten möglichst nicht für die Ortsbestimmung verwendet.</p>
+                        <p id="ID0EEHAG" class="">Die Einsatzgebiete satellitengestützter Sensoren beschränkten sich längst nicht mehr nur auf den militärischen Bereich. Durch die preiswerte Technik sind in den letzten Jahren außerordentlich viele zivile Anwendungen hinzu gewonnen. So ist die Navigation mittels GPS im Straßen-, Schiffs- und Flugverkehr inzwischen Standard. Darüber hinaus kommen entsprechende Empfänger für Diebstahlschutz, Disposition und Logistik, Kommunikation ohne Mobilfunknetz, Senden eines Notfallsignals, Vermessungsaufgaben und andere Anwendungen zum Einsatz. </p>
+                        <p id="ID0EHHAG" class="">Ein globales Navigationssatellitensystem besteht neben den Satelliten und dem Empfänger noch aus einem umfangreichen Kontrollsegment. Dessen Aufgabe ist das Beobachten und Steuern der Satellitenbewegungen sowie das Überwachen und Synchronisieren der Satellitenuhren. Die Satellitendaten werden von Monitorstationen erfasst. Die Hauptkontrollstation ermittelt die erforderlichen Positions- oder Zeitkorrekturen und stellt sie in einer Navigationsnachricht zusammen. Die Bodenkontrollstationen (oder Bodenantennen) übermitteln die Navigationsnachrichten mehrmals am Tag an die jeweiligen Satelliten.</p>
+                        <p id="ID0EKHAG" class="">Zurzeit sind zwei globale Navigationssatellitensysteme, das US-amerikanische GPS und das russische GLONASS, im Einsatz. Zwei weitere Systeme, das Galileo der Europäischen Union und das chinesische BeiDou, befinden sich im Aufbau. Die Genauigkeit des GPS „Standard Positioning Service“ beträgt einige Meter. Der „Precise Positioning Service“ ist militärischen US-Nutzern vorbehalten und erreicht eine Genauigkeit von ungefähr einem Meter.</p>
+                    </div>
+                </section>
+                <section>
+                    <h3>
+                        <a name="ID0EPHAG" id="ID0EPHAG">
+                            <span class="section-number">1.7</span>
+                            <span class="section-title">8.6 Literaturverzeichnis</span>
+                        </a>
+                    </h3>
+                    <div class="segment">
+                        <p id="ID0EWHAG" class="">
+                            <a class="link" href="http://www.geo.uni-hamburg.de/" format="html" scope="external">http://www.geo.uni-hamburg.de</a>, (Zugriff 01.03.2016).</p>
+                        <p id="ID0E6HAG" class="">Bauer, M 2010, Vermessung und Ortung mit Satelliten: Navstar-GPS und andere satellitengestützte Navigationssystem, 5. Auflage, Herbert Wichmann Verlag, Heidelberg.</p>
+                        <p id="ID0ECIAG" class="">
+                            <a class="link" href="http://www.beidou.gov.cn" format="html" scope="external">http://www.beidou.gov.cn</a> (Zugriff 01.03.2016).</p>
+                        <p id="ID0EOIAG" class="">Feilner, M 2009, Genau verortet, Linux-Magazin 12/2009 <a class="link" href="http://www.linux-magazin.de/Ausgaben/2009/12/Genau-verortet" format="html" scope="external">http://www.linux-magazin.de/Ausgaben/2009/12/Genau-verortet</a> (Zugriff 01.03.2016).</p>
+                        <p id="ID0EYIAG" class="">
+                            <a class="link" href="http://www.glonass-iac.ru" format="html" scope="external">http://www.glonass-iac.ru</a> (Zugriff 01.03.2016).</p>
+                        <p id="ID0EEJAG" class="">
+                            <a class="link" href="http://www.gps.gov" format="html" scope="external">http://www.gps.gov</a> (Zugriff 01.03.2016).</p>
+                        <p id="ID0EQJAG" class="">
+                            <a class="link" href="http://www.gsa.europa.eu" format="html" scope="external">http://www.gsa.europa.eu</a> (Zugriff 01.03.2016).</p>
+                        <p id="ID0E3JAG" class="">
+                            <a class="link" href="http://schule-gps.de/pages/gps-wissen/was-ist-gps/positionsbestimmung.php" format="html" scope="external">http://schule-gps.de/pages/gps-wissen/was-ist-gps/positionsbestimmung.php</a>
+                            <span class="hyperlink-candidate"> (Zugriff 01.03.2016).</span>
+                        </p>
+                        <p id="ID0EGKAG" class="">
+                            <a class="link" href="http://www.hs-weingarten.de/~nosper/public/Download/Kapitel%205.8%20GPS%202010.pdf" format="pdf" scope="external">http://www.hs-weingarten.de/~nosper/public/Download/Kapitel%205.8%20GPS%202010.pdf</a> (Zugriff 01.03.2016).</p>
+                        <p id="ID0EPKAG" class="">Klausing, H, Holpp, W 2000, Radar mit realer und synthetischer Apertur, Oldenbourg Verlag, München.</p>
+                        <p id="ID0ESKAG" class="">Mansfeld, W 2010, Satellitenortung und Navigation, Vieweg+Teubner, Wiesbaden.</p>
+                        <p id="ID0EVKAG" class="">Roth, J 2002 Mobile Computing: Grundlagen, Technik, Konzepte, dpunkt-verlag, Heidelberg.</p>
+                        <p id="ID0EYKAG" class="">Wolff, C 1998, Radartutorial, Neubrandenburg. <a class="link" href="http://www.radartutorial.eu" format="html" scope="external">http://www.radartutorial.eu</a> (Zugriff 01.03.2016).</p>
+                        <p id="ID0ECLAG" class="">Zogg, JM 2006, Grundlagen der Satellitennavigation – User´s Guide, u-blox AG, Thalwil.</p>
+                    </div>
+                </section>
+            </section>
+        </article>
+    </body>
+</html>
